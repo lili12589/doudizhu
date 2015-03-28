@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="horizontal"
+	android:background="@drawable/bg">
+	<!-- 添加左家头像布局 -->
+	<include layout="@layout/lfpl_photo" />
+	<!-- 添加右家头像布局 -->
+	<include layout="@layout/rgpl_photo" />
+	<!-- 左家出牌布局 -->
+	<LinearLayout android:id="@+id/left_layout"
+		android:orientation="horizontal" android:layout_marginTop="60dp"
+		android:layout_marginLeft="-320dp" android:layout_width="160dp"
+		android:layout_height="140dp">
+	</LinearLayout>
+	<!-- 右家出牌布局 -->
+	<LinearLayout android:id="@+id/right_layout"
+		android:orientation="horizontal" android:layout_marginTop="60dp"
+		android:layout_width="160dp" android:layout_height="140dp">
+	</LinearLayout>
+	<!-- 桌面layout -->
+	<LinearLayout android:id="@+id/detp_layout"
+		android:layout_height="120dp" android:layout_width="fill_parent"
+		android:gravity="center" android:layout_marginTop="140dp"
+		android:layout_marginLeft="-320dp">
+	</LinearLayout>
+	<!-- 菜单，出牌按钮组和叫分按钮组 -->
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/buttgroup_layout" android:orientation="horizontal"
+		android:layout_width="220dp" android:layout_height="40dp"
+		android:layout_marginTop="276dp" android:layout_marginLeft="-260dp">
+		<!-- 添加出牌layout -->
+		<include layout="@layout/chupai" />
+		<!-- 添加叫分layout -->
+		<include layout="@layout/jiaofen" />
+	</LinearLayout>
+	<!-- 本家出牌布局 -->
+	<LinearLayout android:id="@+id/local_layout"
+		android:orientation="horizontal" android:layout_width="360dp"
+		android:layout_height="wrap_content" android:layout_marginTop="326dp"
+		android:layout_marginLeft="-280dp">
+	</LinearLayout>
+	<!-- 添加本家头像布局 -->
+	<include layout="@layout/lcpl_photo" />
+</LinearLayout>

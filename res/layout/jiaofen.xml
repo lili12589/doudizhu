@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/jiaofen_layout" 
+	android:orientation="horizontal"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"	
+	android:layout_marginTop="0dp"
+	android:layout_marginLeft="0dp"	
+	>
+	
+	<Button 
+		android:id="@+id/bujiao_button"
+		android:layout_width="wrap_content"	
+		android:layout_height="wrap_content"	
+		android:text="不叫"
+	/>
+	<Button 
+		android:id="@+id/yifen_button"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"	
+		android:text="1分"	
+	/>
+	<Button 
+		android:id="@+id/erfen_button"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"	
+		android:text="2分"	
+	/>
+	<Button 
+		android:id="@+id/sanfen_button"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"	
+		android:text="3分"	
+	/>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/chupai_layout" 
+	android:orientation="horizontal"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"	
+	android:layout_marginTop="0dp"
+	android:layout_marginLeft="30dp"	
+	>
+	<!-- 出牌的三个按钮 -->
+	<Button 
+		android:id="@+id/chupai_button"
+		android:layout_width="wrap_content"	
+		android:layout_height="wrap_content"	
+		android:text="出牌"	
+	/>
+	<Button 
+		android:id="@+id/reset_button"
+		android:layout_width="wrap_content"	
+		android:layout_height="wrap_content"	
+		android:text="重选"	
+	/>
+	<Button 
+		android:id="@+id/buchu_button"
+		android:layout_width="wrap_content"	
+		android:layout_height="wrap_content"	
+		android:text="不出"	
+	/>
+</LinearLayout>

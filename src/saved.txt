@@ -1,0 +1,62 @@
+public void LianDui() {// 出连对的情况 334455
+		nextCardsNum_arr.clear();
+		int i = 0, j = 0;
+		if (totalCardsNum_arr.size() < preCardsNum_arr.size()) { // 如果总牌数小于上家出的牌数，则提示没有牌大过上家
+			System.out.println("没有牌大过上家");
+		} else {
+
+			while (j < preCardsNum_arr.size()
+					&& i < totalCardsNum_arr.size() - 1) {
+				if (totalCardsNum_arr.get(i) > preCardsNum_arr
+						.get(j)
+						&& totalCardsNum_arr.get(i) == totalCardsNum_arr
+								.get(i + 1)) {
+					nextCardsNum_arr.add(i);// 得到大于上家出的对子的牌的索引号
+					nextCardsNum_arr.add(i + 1);
+					i = i + 2;
+					j = j + 2;
+				} else
+					i++;
+			}
+
+		}
+
+		if (nextCardsNum_arr.size() - preCardsNum_arr.size() == 0) {
+			nextCardsType = 10;// 遍历后如果得到下家牌的长度与上家出的相同则把标志数值赋为8
+		} else {
+			System.out.println("没有牌大过上家"); // 遍历结束后找不到大于上家的牌
+		}
+
+	}
+
+	public void ThreeLian() {// 出三张相同连子的情况 333444或则33344457
+		nextCardsNum_arr.clear();
+		int i = 0, j = 0;
+		if (totalCardsNum_arr.size() < preCardsNum_arr.size()) { // 如果总牌数小于上家出的牌数，则提示没有牌大过上家
+			System.out.println("没有牌大过上家");
+		} else {
+			while (i < totalCardsNum_arr.size() - 2
+					&& j < preCardsNum_arr.size()) {
+				if (totalCardsNum_arr.get(i) > preCardsNum_arr
+						.get(j)
+						&& totalCardsNum_arr.get(i + 1) == totalCardsNum_arr
+								.get(i)
+						&& totalCardsNum_arr.get(i) == totalCardsNum_arr
+								.get(i + 2)) {
+
+					nextCardsNum_arr.add(i);// 得到大于上家出的对子的牌的索引号
+					nextCardsNum_arr.add(i + 1);
+					nextCardsNum_arr.add(i + 2);
+
+					i = i + 3;
+					j = j + 3;
+				} else
+					i++;
+			}
+			if (nextCardsNum_arr.size() - preCardsNum_arr.size() == 0) {
+				nextCardsType = 9;// 遍历后如果得到下家牌的长度与上家出的相同则把标志数值赋为9
+			} else {
+				System.out.println("没有牌大过上家");// 遍历结束后找不到大于上家的牌
+			}
+		}
+	}

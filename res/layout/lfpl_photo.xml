@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 左家玩家布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:gravity="left" android:id="@+id/lfpl_layout"
+	android:layout_width="160dp" android:layout_height="40dp"
+	>
+
+	<!-- 用于存放左家头像 -->
+	<ImageView android:id="@+id/lfpl_im" android:src="@drawable/pl"
+		android:layout_gravity="left" android:layout_width="40dp"
+		android:layout_height="42dp">
+	</ImageView>
+	<!-- 左家textview -->
+	<TextView android:id="@+id/lfpl_tv" android:layout_height="39dp"
+		android:layout_width="112dp" android:text="" android:gravity="left|center"
+		android:textColor="#c800c8" android:textSize="19dip"
+		android:textStyle="bold" >
+	</TextView>
+</LinearLayout>
